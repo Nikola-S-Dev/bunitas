@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "biko-bold";
+  src: url("../assets/fonts/Biko_Bold.otf");
+}
+
+@font-face {
+  font-family: "biko-regular";
+  src: url("../assets/fonts/Biko_Regular.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "biko-regular", sans-serif, Arial, Helvetica;
+}
+
+button:focus,
+.form-control:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.primary-color {
+  color: #980675;
+}
+
+.section-title-lg {
+  font-size: 45px;
+  font-family: "biko-bold";
+  color: #0f1c3d;
+}
+
+@media screen and (max-width: 450px) {
+  .section-title-lg {
+    font-size: 24px;
+  }
+}
+
+.section-title {
+  font-size: 34px;
+  font-family: "biko-bold";
+  color: #0f1c3d;
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-family: "biko-bold";
+  color: #0f1c3d;
+}
+
+@media screen and (max-width: 450px) {
+  .section-subtitle {
+    font-size: 20px;
+  }
+}
+
+.section-subtitle-sm {
+  font-size: 20px;
+  font-family: "biko-bold";
+  color: #0f1c3d;
+}
+
+@media screen and (max-width: 450px) {
+  .section-subtitle-sm {
+    font-size: 20px;
+  }
+}
+
+.section-desc {
+  font-size: 16px;
+  font-family: "biko-regular";
+  color: #60687d;
+}
+
+@media screen and (max-width: 450px) {
+  .section-desc {
+    font-size: 14px;
+  }
+}
+
+.primary-btn {
+  font-size: 16px;
+  font-family: "biko-bold";
+  background-color: #980675;
+  padding: 9px 36px;
+  border-radius: 10px;
+  color: white;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.primary-btn:hover {
+  background-color: #e419b4;
+  color: white;
+  -webkit-box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
+}
+
+@media screen and (max-width: 450px) {
+  .primary-btn {
+    font-size: 12px;
+  }
+}
+
+.primary-outline-btn {
+  font-size: 16px;
+  font-family: "biko-bold";
+  border: 1px solid #980675;
+  padding: 9px 36px;
+  border-radius: 10px;
+  color: #980675;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.primary-outline-btn:hover {
+  border-color: #e419b4;
+  background-color: #e419b4;
+  color: white;
+  -webkit-box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
+}
+
+@media screen and (max-width: 450px) {
+  .primary-outline-btn {
+    font-size: 12px;
+  }
+}
+
+.white-outline-btn {
+  font-size: 16px;
+  font-family: "biko-bold";
+  border: 1px solid white;
+  padding: 9px 36px;
+  border-radius: 10px;
+  color: white;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.white-outline-btn:hover {
+  border-color: white;
+  background-color: white;
+  color: #e419b4;
+  -webkit-box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
+}
+
+@media screen and (max-width: 450px) {
+  .white-outline-btn {
+    font-size: 12px;
+  }
+}
+
+.glass-btn {
+  background: rgba(255, 255, 255, 0.192);
+  color: white;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.glass-btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.308);
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-34 {
+  font-size: 34px;
+}
+
+.fs-38 {
+  font-size: 38px;
+}
+
+.fs-42 {
+  font-size: 42px;
+}
+
+.fs-46 {
+  font-size: 46px;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.my-70 {
+  margin: 70px 0;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.primary-link-arrow {
+  color: #980675;
+  text-decoration: none;
+}
+
+.primary-link-arrow:hover {
+  color: #e419b4;
+}
+
+.product-cards {
+  position: relative;
+}
+
+.product-cards-wrapper {
+  padding: 13px;
+}
+
+.product-cards .tag {
+  position: absolute;
+  padding: 3px 5px;
+  top: 6px;
+  left: 6px;
+  font-size: 12px;
+  line-height: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  background: #de007b;
+  border: 1px solid #de007b;
+  color: #fff;
+  z-index: 1;
+}
+
+.product-cards a {
+  text-decoration: none;
+  color: #111;
+}
+
+.product-cards a:hover {
+  opacity: 0.5;
+}
+
+.product-cards .product-card-body,
+.product-cards .product-card-footer {
+  padding: 10px;
+}
+
+.product-cards .product-card {
+  position: relative;
+  background-color: white;
+}
+
+.product-cards .product-card .title {
+  margin: 5px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font-size: 12pxrem;
+  font-weight: 600;
+  border-radius: 4px;
+  background: #de007b;
+  border: 1px solid #de007b;
+  color: #fff;
+  z-index: 1;
+}
+/*# sourceMappingURL=global.css.map */

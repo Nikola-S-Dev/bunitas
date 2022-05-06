@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "biko-bold";
+  src: url("../assets/fonts/Biko_Bold.otf");
+}
+@font-face {
+  font-family: "biko-regular";
+  src: url("../assets/fonts/Biko_Regular.otf");
+}
+
+$primary-color: #980675;
+$primary-color-light: #e419b4;
+// color
+$blue-1: #0c0c6d;
+$blue-2: #0f1c3d;
+$blue-3: #3b69db;
+$blue-4: #5228fc;
+$grey-1: #95a1be;
+$grey-2: #60687d;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "biko-regular", sans-serif, Arial, Helvetica;
+}
+button,
+.form-control {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+// color classes
+.primary-color {
+  color: $primary-color;
+}
+// font presets
+.section {
+  &-title-lg {
+    font-size: 45px;
+    font-family: "biko-bold";
+    color: $blue-2;
+    @media screen and (max-width: 450px) {
+      font-size: 24px;
+    }
+  }
+  &-title {
+    font-size: 34px;
+    font-family: "biko-bold";
+    color: $blue-2;
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 24px;
+    }
+  }
+  &-subtitle {
+    font-size: 24px;
+    font-family: "biko-bold";
+    color: $blue-2;
+    @media screen and (max-width: 450px) {
+      font-size: 20px;
+    }
+  }
+  &-subtitle-sm {
+    font-size: 20px;
+    font-family: "biko-bold";
+    color: $blue-2;
+    @media screen and (max-width: 450px) {
+      font-size: 20px;
+    }
+  }
+  &-desc {
+    font-size: 16px;
+    font-family: "biko-regular";
+    color: $grey-2;
+    @media screen and (max-width: 450px) {
+      font-size: 14px;
+    }
+  }
+}
+
+// =================================================================
+// buttons
+// =================================================================
+
+.primary-btn {
+  font-size: 16px;
+  font-family: "biko-bold";
+  background-color: $primary-color;
+  padding: 9px 36px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: $primary-color-light;
+    color: white;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+    transform: scaleX(1.05);
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+.primary-outline-btn {
+  font-size: 16px;
+  font-family: "biko-bold";
+  border: 1px solid $primary-color;
+  padding: 9px 36px;
+  border-radius: 10px;
+  color: $primary-color;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    border-color: $primary-color-light;
+    background-color: $primary-color-light;
+    color: white;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+    transform: scaleX(1.05);
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+.white-outline-btn {
+  font-size: 16px;
+  font-family: "biko-bold";
+  border: 1px solid white;
+  padding: 9px 36px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    border-color: white;
+    background-color: white;
+    color: $primary-color-light;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.075) !important;
+    transform: scaleX(1.05);
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+// button
+.glass-btn {
+  background: rgba(255, 255, 255, 0.192);
+  color: white;
+  transition: background 300ms ease-in-out;
+  &:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.308);
+  }
+}
+
+// fonts sizes
+.fs {
+  &-12 {
+    font-size: 12px;
+  }
+  &-14 {
+    font-size: 14px;
+  }
+  &-16 {
+    font-size: 16px;
+  }
+  &-18 {
+    font-size: 18px;
+  }
+  &-20 {
+    font-size: 20px;
+  }
+  &-22 {
+    font-size: 22px;
+  }
+  &-24 {
+    font-size: 24px;
+  }
+  &-26 {
+    font-size: 26px;
+  }
+  &-28 {
+    font-size: 28px;
+  }
+  &-30 {
+    font-size: 30px;
+  }
+  &-34 {
+    font-size: 34px;
+  }
+  &-38 {
+    font-size: 38px;
+  }
+  &-42 {
+    font-size: 42px;
+  }
+  &-46 {
+    font-size: 46px;
+  }
+}
+
+.fw {
+  &-500 {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+}
+// spacing
+.my {
+  &-70 {
+    margin: 70px 0;
+  }
+}
+.mb {
+  &-70 {
+    margin-bottom: 70px;
+  }
+  &-100 {
+    margin-bottom: 100px;
+  }
+  &-120 {
+    margin-bottom: 120px;
+  }
+}
+// primary-link-arrow
+.primary-link-arrow {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    color: $primary-color-light;
+  }
+}
+
+// product-cards
+.product-cards {
+  position: relative;
+  &-wrapper {
+    padding: 13px;
+  }
+  .tag {
+    position: absolute;
+    padding: 3px 5px;
+    top: 6px;
+    left: 6px;
+    font-size: 12px;
+    line-height: 0.8rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #de007b;
+    border: 1px solid #de007b;
+    color: #fff;
+    z-index: 1;
+  }
+  a {
+    &:hover {
+      opacity: 0.5;
+    }
+    text-decoration: none;
+    color: #111;
+  }
+
+  .product-card-body,
+  .product-card-footer {
+    padding: 10px;
+  }
+  .product-card {
+    position: relative;
+    background-color: white;
+    .title {
+      margin: 5px;
+      position: absolute;
+      top: 6px;
+      left: 0;
+      font-size: 12pxrem;
+      font-weight: 600;
+      border-radius: 4px;
+      background: #de007b;
+      border: 1px solid #de007b;
+      color: #fff;
+      z-index: 1;
+    }
+  }
+}
